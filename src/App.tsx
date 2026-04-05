@@ -7,7 +7,7 @@ import Planet from './components/Planet';
 import InfoPanel from './components/InfoPanel';
 
 function App() {
-  const [selectedPlanetIndex, setSelectedPlanetIndex] = useState(2); // Earth as default
+  const [selectedPlanetIndex, setSelectedPlanetIndex] = useState(0); // Mercury as default
   const [activeInfoPlanet, setActiveInfoPlanet] = useState<PlanetData | null>(null);
 
   const handlePlanetSelect = (index: number) => {
