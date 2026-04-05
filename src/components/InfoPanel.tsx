@@ -11,43 +11,51 @@ interface InfoPanelProps {
 const InfoPanel: FC<InfoPanelProps> = ({ planet, onClose }) => {
     return (
         <>
+            {/* Backdrop */}
             <div
                 className={cn(
-                    "fixed inset-0 z-[60] bg-[#382563]/30 transition-all duration-300",
-                    planet ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                    "fixed inset-0 z-[60] transition-all duration-700",
+                    planet ? "bg-black/40 pointer-events-auto" : "bg-black/0 pointer-events-none"
                 )}
                 onClick={onClose}
-            >
-                <div className="absolute left-[10%] top-1/2 -translate-y-1/2 text-white text-[30px] opacity-0 animate-pulse text-center">
-                    Back
-                </div>
-            </div>
+            />
 
+            {/* Info Panel */}
             <div
                 className={cn(
-                    "fixed top-0 bottom-0 right-0 w-[420px] z-[70] shadow-[-20px_0_40px_rgba(0,0,0,0.5)] transition-all duration-700 ease-in-out p-12 overflow-y-auto scrollbar-hide",
+                    "fixed top-0 right-0 bottom-0 z-[70] w-[50%] max-w-[640px] transition-all duration-700 ease-[cubic-bezier(0.33,0,0,1)] overflow-y-auto",
                     planet ? "translate-x-0" : "translate-x-full"
                 )}
-                style={{ backgroundColor: 'black' }}
             >
                 {planet && (
-                    <div className="flex flex-col gap-8 opacity-0 animate-[fadeIn_0.5s_0.3s_forwards]">
+                    <div className="flex flex-col min-h-full p-12 lg:p-16">
+                        {/* Close Button */}
                         <button
                             onClick={onClose}
-                            className="self-end p-2 hover:bg-white/10 rounded-full transition-colors"
+                            className="self-end p-2 hover:bg-white/10 rounded-full transition-colors mb-8"
                         >
-                            <X className="w-6 h-6" />
+                            <X className="w-6 h-6 text-white" />
                         </button>
 
-                        <h1 className="text-4xl font-bold uppercase tracking-wider">{planet.name}</h1>
+                        {/* Planet Name */}
+                        <div className="opacity-0 animate-[fadeIn_0.5s_0.2s_forwards]">
+                            <h2 className="text-[12px] uppercase font-thin tracking-[6px] text-[#f39041] mb-2">
+                                Planet
+                            </h2>
+                            <h1 className="text-5xl lg:text-6xl font-bold uppercase tracking-[6px] leading-tight mb-8">
+                                {planet.name}
+                            </h1>
+                        </div>
 
-                        <div className="flex flex-col gap-6 text-[14px] font-light leading-loose opacity-80">
+                        {/* Full Description */}
+                        <div className="flex flex-col gap-6 text-[15px] font-light leading-relaxed opacity-80 opacity-0 animate-[fadeIn_0.5s_0.4s_forwards]">
                             {planet.fullDescription.map((para, i) => (
                                 <p key={i}>{para}</p>
                             ))}
                         </div>
 
-                        <div className="my-4 rounded-lg overflow-hidden border border-white/10">
+                        {/* Landscape Image */}
+                        <div className="mt-10 rounded-lg overflow-hidden border border-white/10 opacity-0 animate-[fadeIn_0.5s_0.6s_forwards]">
                             <img
                                 src={planet.landscapeUrl}
                                 alt={`${planet.name} landscape`}
@@ -55,17 +63,31 @@ const InfoPanel: FC<InfoPanelProps> = ({ planet, onClose }) => {
                             />
                         </div>
 
-                        <div className="flex flex-col gap-4">
-                            <h2 className="text-xl font-semibold text-primary">Key Statistics</h2>
+                        {/* Key Statistics */}
+                        <div className="mt-10 opacity-0 animate-[fadeIn_0.5s_0.8s_forwards]">
+                            <h3 className="text-sm uppercase tracking-[4px] text-[#f39041] mb-4">
+                                Key Statistics
+                            </h3>
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="p-4 bg-white/5 rounded-lg border border-white/5">
-                                    <p className="text-xs uppercase tracking-widest opacity-50 mb-1">Distance</p>
-                                    <p className="font-bold">{planet.distanceAU}</p>
+                                <div className="p-5 bg-white/5 rounded-lg border border-white/5">
+                                    <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2">
+                                        Distance from Sun
+                                    </p>
+                                    <p className="text-lg font-semibold">{planet.distanceAU}</p>
                                 </div>
+                                {planet.moons.length > 0 && (
+                                    <div className="p-5 bg-white/5 rounded-lg border border-white/5">
+                                        <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2">
+                                            Moons
+                                        </p>
+                                        <p className="text-lg font-semibold">{planet.moons.length}</p>
+                                    </div>
+                                )}
                             </div>
                         </div>
 
-                        <div className="h-20" />
+                        {/* Bottom spacing */}
+                        <div className="h-16" />
                     </div>
                 )}
             </div>

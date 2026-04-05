@@ -7,10 +7,11 @@ interface PlanetProps {
     data: PlanetData;
     index: number;
     selectedIndex: number;
+    isInfoOpen: boolean;
     onReadMore: (planet: PlanetData) => void;
 }
 
-const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, onReadMore }) => {
+const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onReadMore }) => {
     const isSelected = index === selectedIndex;
 
     // Calculate 3D position relative to selected planet
@@ -33,8 +34,8 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, onReadMore }) => 
                 style={{
                     background: `url(${data.textureUrl})`,
                     backgroundSize: '1140px 910px',
-                    transform: `translateZ(${zTranslation}px) translateY(0) rotateX(4deg) scaleX(0.89)`,
-                    opacity: Math.max(0, opacity + 1), // Increased base opacity to match original's "opacity: 2" etc
+                    transform: `translateZ(${zTranslation}px) translateY(${isInfoOpen && isSelected ? '-600px' : '0px'}) rotateX(4deg) scale(${isInfoOpen && isSelected ? '0.75' : '0.89'}) translateX(${isInfoOpen && isSelected ? '-35vw' : '0px'})`,
+                    opacity: Math.max(0, opacity + 1),
                     pointerEvents: isSelected ? 'all' : 'none',
                     boxShadow: `0 -590px 150px black inset, 0 0px 130px 40px ${data.glowColor} inset, 0 0px 23px 4px ${data.glowColor} inset, 0 -10px 130px ${data.shadowColor}`
                 }}
@@ -66,15 +67,15 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, onReadMore }) => 
 
             </div>
 
-            {/* Description Content - Fixed position relative to viewport, not tilted */}
+            {/* Description Content - fades out when info panel is open */}
             <div
                 className={cn(
-                    "absolute top-[40%] right-[10%] -translate-y-1/2 w-[400px] transition-all duration-1000 delay-[1.5s]",
-                    isSelected ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20 pointer-events-none"
+                    "absolute top-[40%] right-[10%] -translate-y-1/2 w-[400px] transition-all duration-700",
+                    isSelected && !isInfoOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20 pointer-events-none"
                 )}
             >
                 <h2 className="text-[14px] uppercase font-thin tracking-[4px] text-[#f39041] mb-2 translate-y-4 transition-all duration-500 delay-[1.7s]">
-                    {isSelected ? 'Planet' : ''}
+                    {isSelected && !isInfoOpen ? 'Planet' : ''}
                 </h2>
                 <h1 className="text-[60px] font-bold uppercase tracking-[5px] leading-tight mb-4 translate-y-4 transition-all duration-500 delay-[1.8s]">
                     {data.name}

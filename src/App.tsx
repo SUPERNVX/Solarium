@@ -15,6 +15,8 @@ function App() {
     setActiveInfoPlanet(null);
   };
 
+  const isInfoOpen = activeInfoPlanet !== null;
+
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black font-montserrat select-none">
       {/* Visual background */}
@@ -38,6 +40,7 @@ function App() {
               data={planet}
               index={index}
               selectedIndex={selectedPlanetIndex}
+              isInfoOpen={isInfoOpen}
               onReadMore={setActiveInfoPlanet}
             />
           ))}
@@ -50,7 +53,7 @@ function App() {
         onSelect={handlePlanetSelect}
       />
 
-      {/* Detailed Info Panel Overlay */}
+      {/* Detailed Info Panel */}
       <InfoPanel
         planet={activeInfoPlanet}
         onClose={() => setActiveInfoPlanet(null)}
