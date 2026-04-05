@@ -40,6 +40,44 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
                     boxShadow: `0 -590px 150px black inset, 0 0px 130px 40px ${data.glowColor} inset, 0 0px 23px 4px ${data.glowColor} inset, 0 -10px 130px ${data.shadowColor}`
                 }}
             >
+                {/* Planet name label - matching original moon label style */}
+                <div
+                    className="absolute text-center text-white uppercase"
+                    style={{
+                        top: '-140px',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        opacity: isSelected ? 1 : 0,
+                        transition: 'all 1s 3.2s'
+                    }}
+                >
+                    <h3
+                        style={{
+                            fontWeight: 100,
+                            fontSize: '20px',
+                            letterSpacing: '5px',
+                            color: '#fea082',
+                            margin: 0,
+                            position: 'relative',
+                            top: '-120px'
+                        }}
+                    >
+                        Planet
+                    </h3>
+                    <h2
+                        style={{
+                            fontWeight: 100,
+                            fontSize: '40px',
+                            letterSpacing: '5px',
+                            margin: 0,
+                            position: 'relative',
+                            top: '-120px'
+                        }}
+                    >
+                        {data.name}
+                    </h2>
+                </div>
+
                 {/* Moons and Trajectories */}
                 {data.moons.map((moon, mIdx) => (
                     <Fragment key={moon.name}>
