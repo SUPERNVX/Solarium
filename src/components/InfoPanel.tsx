@@ -3,20 +3,33 @@ import type { PlanetData } from '../constants';
 import { X } from 'lucide-react';
 import { cn } from '../lib/utils';
 
+const bodyTypeLabels: Record<string, string> = {
+    star: 'Estrela',
+    planet: 'Planeta',
+    moon: 'Lua',
+    dwarf: 'Planeta anão',
+};
+
+const statLabels: Record<string, string> = {
+    diameter: 'Diâmetro',
+    distanceFromSun: 'Distância do Sol',
+    orbitalPeriod: 'Período orbital',
+    rotationPeriod: 'Período de rotação',
+    axialTilt: 'Inclinação do eixo',
+    temperature: 'Temperatura',
+    gravity: 'Gravidade',
+    density: 'Densidade',
+    moons: 'Luas',
+    rings: 'Anéis',
+};
+
 interface InfoPanelProps {
     planet: PlanetData | null;
     onClose: () => void;
 }
 
-const bodyTypeLabels: Record<string, string> = {
-    star: 'Star',
-    planet: 'Planet',
-    moon: 'Moon',
-    dwarf: 'Dwarf planet',
-};
-
 const InfoPanel: FC<InfoPanelProps> = ({ planet, onClose }) => {
-    const bodyLabel = planet ? bodyTypeLabels[planet.bodyType] || 'Planet' : 'Planet';
+    const bodyLabel = planet ? bodyTypeLabels[planet.bodyType] || 'Planeta' : 'Planeta';
 
     return (
         <>
@@ -72,26 +85,22 @@ const InfoPanel: FC<InfoPanelProps> = ({ planet, onClose }) => {
                             />
                         </div>
 
-                        {/* Key Statistics */}
+                        {/* Statistics */}
                         <div className="mt-10 opacity-0 animate-[fadeIn_0.5s_0.8s_forwards]">
                             <h3 className="text-sm uppercase tracking-[4px] text-[#f39041] mb-4">
-                                Key Statistics
+                                Estatísticas
                             </h3>
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="p-5 bg-white/5 rounded-lg border border-white/5">
-                                    <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2">
-                                        Distance from Sun
-                                    </p>
-                                    <p className="text-lg font-semibold">{planet.distanceAU}</p>
-                                </div>
-                                {planet.moons.length > 0 && (
-                                    <div className="p-5 bg-white/5 rounded-lg border border-white/5">
-                                        <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2">
-                                            Moons
-                                        </p>
-                                        <p className="text-lg font-semibold">{planet.moons.length}</p>
-                                    </div>
-                                )}
+                                {Object.entries(planet.stats).map(([key, value]) => (
+                                    value && (
+                                        <div key={key} className="p-5 bg-white/5 rounded-lg border border-white/5">
+                                            <p className="text-[10px] uppercase tracking-widest opacity-50 mb-2">
+                                                {statLabels[key] || key}
+                                            </p>
+                                            <p className="text-lg font-semibold">{value}</p>
+                                        </div>
+                                    )
+                                ))}
                             </div>
                         </div>
 

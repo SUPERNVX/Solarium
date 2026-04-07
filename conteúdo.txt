@@ -1,0 +1,166 @@
+Mercúrio: Mercúrio é o primeiro planeta do sistema solar e também o menor deles, sendo ligeiramente maior do que a Lua, e se encontra fora da zona habitável. Seu nome é uma homenagem ao mais veloz dos Deuses Romanos. 
+Composição: Faz parte dos planetas rochosos (também conhecidos como planetas internos) e é composto principalmente de metais e silicatos. Seu núcleo é metálico, feito de ferro. 
+Tamanho e distância: Possui um raio de 2440 Km e está a 58 milhões de Km do Sol, o que corresponde a 0,4 UA. 1 UA é a distância da Terra ao Sol.   
+Órbita, translação e rotação: Sua translação tem duração de 88 dias, com a distância mínima de 47 milhões de Km e distância máxima de 70 milhões de Km. Sua rotação dura 59 dias terrestres. Sua órbita é oval.   
+Inclinação do eixo: Aproximadamente 2 graus, o que faz com que ele não tenha estações.  
+Temperatura: Temperaturas extremas: 430°C/-180° C (800°F/-290°F).   
+Gravidade: 3,7 m/s2.
+Densidade: Aproximadamente 13.600 Kg/m3. 
+Luas: Não possui luas. 
+Anéis: Não possui anéis. 
+Atmosfera: Sua fina exosfera é composta por átomos de oxigênio, sódio, hidrogênio, hélio e potássio, provenientes da superfície atingidas pelo vento solar e meteoróides. 
+Superfície: Possui inúmeras crateras, que recebem o nome de pessoas famosas. Existem áreas planas e penhascos. Sua cor é marrom-acinzentada. 
+Curiosidade: Devido à algumas anomalias em sua órbita, Mercúrio levou a descoberta da Teoria da Relatividade Geral de Einstein, explicando a curvatura do espaço-tempo. 
+
+
+
+Vênus: Vênus é o segundo planeta do sistema solar, e se encontra fora da zona habitável. Seu nome vem da antiga deusa romana do amor e da beleza. 
+Composição: Seu núcleo é composto por ferro e é envolto por um manto rochoso, com uma camada super fina compondo a crosta rochosa externa. Essa camada às vezes muda de forma, dando origem a vulcões. 
+Tamanho e distância: Vênus está a uma distância de 108 milhões de Km do Sol, aproximadamente 0,72 UA. Possui um diâmetro de 12.104 Km. 
+Órbita, translação e rotação: Um dia no planeta dura 243 dias terrestres, enquanto seu período de translação dura apenas 225 dias terrestres. 
+Inclinação do eixo: 177 graus, sendo considerado “de cabeça pra baixo”. 
+Temperatura: 460°C - 480°C (864°F - 900°F). 
+Gravidade: 8,87 m/s2.
+Densidade: 5243 Kg/m3.
+Luas: Não possui luas. 
+Anéis: Não possui anéis. 
+Atmosfera: Sua atmosfera é composta de dióxido de carbono, com algumas nuvens formadas por ácido sulfúrico. A temperatura e a pressão diminuem nas camadas mais altas da atmosfera. 
+Superfície: Possui vales e montanhas, e milhares de vulcões. 
+Curiosidade: Embora muitas pessoas pensem que Mercúrio é o planeta mais quente, esse título vai para Vênus. Isso acontece pelo fato de o planeta ter uma atmosfera capaz de reter o calor do sol de forma muito efetiva, devido aos gases presentes.  
+
+Terra: A Terra é o terceiro planeta do sistema solar, e é a única com água líquida na superfície e cujo nome não deriva da mitologia grega ou romana. 
+Composição: Possui 4 camadas principais: núcleo interno, núcleo externo, manto e crosta terrestre. O núcleo possui ferro e níquel metálicos. O manto é a camada mais externa. 
+Tamanho e distância: Possui um diâmetro de 12.756 Km, e está a 150 milhões de quilômetros do Sol, o que corresponde a 1 UA. 
+Órbita, translação e rotação: Sua translação dura 365 dias. Sua rotação dura 23 horas e 56 minutos, porém é aproximada para 24 horas, tornando necessário o ano bissexto. Sua órbita é elíptica.  
+Inclinação do eixo: 23,5 graus.  
+Temperatura: Aproximadamente -90°C a 55°C. 
+Gravidade: 9,81 m/s2. 
+Densidade: 5520 Kg/m3. 
+Luas: 1. 
+Anéis: Não possui anéis. 
+Atmosfera: A atmosfera da Terra é composta por 78% de nitrogênio, 21% de oxigênio e 1% de outros gases, como o dióxido de carbono. Ela nos protege contra a radiação solar e contra os meteoroides. 
+Superfície: Possui montanhas, vulcões e vales. A litosfera terrestre se divide em grandes placas tectônicas, que causam os terremotos ao se movimentarem de forma brusca. O oceano cobre 71% da superfície terrestre. 
+Curiosidade: A gravidade não é igual em todos os lugares. Quanto mais perto do chão, maior é a gravidade, fazendo com que o tempo passe mais devagar. Porém, a diferença é muito sútil, e não é perceptível. 
+
+Marte: Marte é o quarto planeta do sistema solar, e o único, além da Terra com potencial para vida. Seu nome vem do antigo Deus romano da guerra.  
+Composição: 
+Tamanho e distância: Possui um raio de 3390 Km. Está a 228 milhões de km de distância do sol, o que corresponde a 1,5 UA. 
+Órbita, translação e rotação: A rotação de Marte dura apenas 24,6 horas, e sua translação dura 667 dias terrestres. 
+Inclinação do eixo: 25,19 graus. 
+Temperatura: -143°C a 35°C. 
+Gravidade: 3,73 m/s2. 
+Densidade: 3930 Kg/m3. 
+Luas: 2.  
+Anéis: Não possui anéis. 
+Atmosfera: Composta principalmente por dióxido de carbono, nitrogênio e argônio. Se vivêssemos em Marte, veríamos o céu avermelhado. O planeta sofre com tempestades densas de poeira.    
+Superfície: Suas cores são marrom, dourado e bege, e sua cor avermelhada vem da oxidação do ferro presente no solo. Possui um grande sistema de cânions chamado Valles Marineris.  
+Curiosidade: O planeta recebeu o nome do deus romano da guerra pelo fato de ter coloração avermelhada, pois o deus Marte seria famoso por adorar destruição e conflitos sangrentos. 
+
+Júpiter: Júpiter é o quinto planeta do sistema solar, e é também o maior deles. Seu nome é em homenagem ao Rei dos Deuses da roma Antiga. 
+Composição: Composto principalmente por hidrogênio e hélio. A temperatura aumenta cada vez mais conforme chega ao centro. 
+Tamanho e distância: Raio de 69.911 Km, e está a 778 milhões de km do sol, o que corresponde a 5,2 UA. 
+Órbita, translação e rotação: Sua rotação dura apenas 9,9 horas, e sua translação dura 12 anos. 
+Inclinação do eixo: 3,13 graus 
+Temperatura: -145°C a 700°C
+Gravidade: 24,79 m/s2.
+Densidade: 1326 Kg/m3.
+Luas: 95. 
+Anéis: 4. 
+Atmosfera: Ele é composto principalmente por amônia (gelo de amônia e hidrossulfeto de amônio). As faixas espessas contém enxofre e fósforo. Possui ciclones polares nos dois polos.   
+Superfície: Não possui uma superfície, pois é um planeta principalmente gasoso. 
+Curiosidade: Júpiter possui uma grande mancha vermelha, que é uma tempestade que já dura centenas de anos. Dados indicam que ela está diminuindo. Júpiter também funciona como um protetor para a Terra, pois sua alta gravidade evita que muitos asteróides colidam com a Terra. 
+
+Saturno: Saturno é o sexto planeta do sistema solar, e o segundo maior planeta, é gasoso e se encontra fora da zona habitável, sendo considerado um planeta externo. Seu nome vem do Deus romano da agricultura e riqueza, além de ser pai de Júpiter. 
+Composição: Sua composição leva principalmente hidrogênio e hélio. Seu núcleo é denso com ferro e níquel, e cercado por um material rochoso com compostos solidificados pela pressão e calor. O núcleo é envolvido por uma camada de hidrogênio metálico líquido. 
+Tamanho e distância: Possui um diâmetro de 120.500 Km, e está há uma distância de 1,4 bilhão de Km do sol, o que corresponde a 9,5 UA. 
+Órbita, translação e rotação: Sua translação dura 29,4 anos terrestres, enquanto sua rotação dura 10,7 horas. Sua órbita 
+Inclinação do eixo: 26,73 graus, ou seja, Saturno também experimenta estações. 
+Temperatura: Em média, -140°C (-220°F). 
+Gravidade: 10,44 m/s2.
+Densidade: 687 Kg/m3.
+Luas: 146. 
+Anéis: 7. Cada anel o orbita a uma velocidade diferente. 
+Atmosfera: Coberto com nuvens que parecem linhas. Suas tonalidades são amarelo, marrom e cinza. A pressão é tão grande que é capaz de transformar o gás em líquido na região equatorial. No polo norte, há uma corrente de jato hexagonal, com uma enorme tempestade em seu centro.   
+Superfície: Ele não possui uma superfície, pois é composto de gases e líquidos que estão em constante movimento. 
+Curiosidade: Saturno é o único planeta do sistema solar que é menos denso do que a água, ou seja, ele seria capaz de flutuar nela. 
+
+Urano: Urano é o sétimo planeta do sistema solar, e seu nome foi dado em homenagem ao Deus grego do céu. 
+Composição: Composto principalmente por água, metano e amônia. Sua coloração azulada vem do metano. É um dos dois planetas gelados. Possui um pequeno núcleo rochoso. 
+Tamanho e distância: Seu diâmetro possui 51.118 km, e está a uma distância de 2,9 bilhões de km do sol, o que corresponde a 19 UA. 
+Órbita, translação e rotação: Sua rotação dura 17 horas, e sua translação dura 84 anos. 
+Inclinação do eixo: 97,77 graus. 
+Temperatura: -224°C a -195°C.
+Gravidade: 8,69 m/s2.
+Densidade: 1270 Kg/m3.
+Luas: 27. 
+Anéis: 13. 
+Atmosfera: Constituída principalmente por hidrogênio, hélio, água, metano e amônia.  
+Superfície: Não possui uma superfície, pois é um planeta principalmente gasoso. 
+Curiosidade: Urano foi o primeiro planeta que foi descoberto por um telescópio, pois primeiro pensou-se que ele era um cometa. 
+
+Netuno: Netuno é o oitavo planeta do sistema solar, e seu nome foi dado em homenagem em homenagem ao Deus romano dos mares. 
+Composição: Composto principalmente por água, metano e amônia, além de ter um núcleo mais denso e rochoso. 
+Tamanho e distância: Possui um diâmetro de 30.775 km, e está a 4.5 bilhões de km do sol, o que corresponde a 30 UA. 
+Órbita, translação e rotação: A rotação de Netuno dura 16 horas, enquanto sua translação demora 165 anos.  
+Inclinação do eixo: 28,32 graus.
+Temperatura: -224°C a -200°C
+Gravidade: 11,15 m/s2. 
+Densidade: 1638 Kg/m3.
+Luas: 16. 
+Anéis: 5. 
+Atmosfera: Possui principalmente hidrogênio e hélio. Seus ventos podem ser até 3 vezes mais fortes do que Júpiter. 
+Superfície: Não possui uma superfície, por ser um planeta gasoso. Porém, seu núcleo rochoso tem uma massa parecida com a Terra. 
+Curiosidade: Por causa da grande pressão e da presença de metano, acontecem chuvas de diamante no interior do planeta. 
+
+
+Planetas-anões: 
+
+Ceres: Ceres é o planeta anão mais próximo da Terra, localizado no cinturão de asteróides, entre Marte e Júpiter, sendo o único dos planetas anões a se localizar no sistema solar interno. Seu nome vem da deusa romana do milho e da colheita. 
+Órbita e rotação: Sua rotação dura 9 horas, enquanto sua translação, 4,6 anos terrestres. 
+Estrutura: Possui um núcleo sólido e seu manto contém gelo de água. Sua crosta é rochosa e cheia de poeira. 
+Atmosfera: É provável que ela tenha vapor de água em sua atmosfera.
+Superfície: Coberta por crateras pequenas e bem jovens. 
+Gravidade: 0,284 m/s2. 
+Densidade: 2.200 kg/m3. 
+Tamanho e distância: Está a 413 milhões de km do sol, sendo 2,8 UA. Seu raio é de 476 km. 
+Curiosidade: É o maior objeto localizado no cinturão de asteróides.   
+
+Plutão: Plutão é o segundo planeta anão do sistema solar, localizado no cinturão de Kuiper (região transnetuniana). Seu nome foi dado em homenagem ao deus romano do submundo. Uma menina de 11 anos escolheu o nome. 
+Órbita e rotação: Sua translação dura 248 anos, enquanto sua rotação dura 153 horas. 
+Estrutura: Possui um núcleo rochoso, com gelo de água em volta. 
+Atmosfera: Composta principalmente por nitrogênio molecular, mas também foram detectadas moléculas de metano e monóxido de carbono. A gravidade baixa faz com que a altitude da atmosfera seja muito extensa em altitude, e no período mais longe do sol, portanto mais frio, uma parte da atmosfera pode virar neve. 
+Superfície: Possui montanhas, vale e crateras. Ela é revestida por gases como metano e nitrogênio. 
+Gravidade: 0,62 m/s2.
+Densidade: 1.900 a 2.100 kg/m3.
+Tamanho e distância: Seu diâmetro tem 2.377 km, e está a 5,9 bilhões de km do sol, o que corresponde a 39 UA.  
+Curiosidade: Plutão já foi o nono planeta do sistema solar, porém ele foi reclassificado, em 2006, pela União Astronômica Internacional, se tornando um planeta anão, por conta de objetos que podem cruzar sua órbita.   
+
+Haumea: Haumea é o terceiro planeta anão do sistema solar, localizado no cinturão de Kuiper. Seu nome veio da deusa havaiana da fertilidade. 
+Órbita e rotação: Sua translação dura 285 anos, enquanto a rotação dura apenas 4 horas. 
+Estrutura: Acredita-se que Haumea seja formada por rocha e uma camada de gelo.  
+Atmosfera: Não se sabe muito sobre a atmosfera de Haumea. 
+Superfície: Não se sabe muito sobre a superfície de Haumea. 
+Gravidade: 0,401 m/s2.
+Densidade: 2.600 a 3.300 kg/m3.
+Tamanho e distância: Seu diâmetro possui 1.740 km, e está a 6,5 bilhões de km do sol, o que corresponde a 43 UA. 
+Curiosidade: Haumea possui um formato oval, por conta da sua velocidade de rotação, que é umas das mais rápidas do sistema solar.  
+
+Make-make: Make-make é o quarto planeta anão do sistema solar, localizado no cinturão de Kuiper. Seu nome foi dado em homenagem ao deus Rapanui, da fertilidade. 
+Órbita e rotação: Sua translação leva cerca de 305 anos, enquanto a rotação dura 22 horas e 30 minutos.   
+Estrutura: Não se sabe muito sobre a estrutura de Make-make. 
+Atmosfera: Provavelmente composta por nitrogênio, enquanto está mais próxima do sol (periélio). 
+Superfície: Foi detectado metano e etano congelados em sua superfície, e aparenta ter uma coloração marrom-avermelhada.  
+Gravidade: 0,5 m/s2. 
+Densidade: 1.700 a 2.000 kg/m3.
+Tamanho e distância: Seu raio possui 715 km, e está a aproximadamente 6,8 bilhões de km do sol, o que corresponde a 45,8 UA.  
+Curiosidade: Make-make é considerada um planeta anão irmão de Plutão, devido à algumas características semelhantes.   
+
+Éris: Éris é o quinto e último planeta anão do sistema solar. Seu nome vem da deusa grega da discórdia. 
+Órbita e rotação: Sua translação leva cerca de 557 anos, enquanto sua rotação dura aproximadamente 26 horas.  
+Estrutura: Não se sabe muito sobre a estrutura de Éris.  
+Atmosfera: Por estar muito longe do sol, sua superfície congela e precipita como neve, e ao se aproximar, ela se descongela. 
+Superfície: Acredita-se que sua superfície seja semelhante à de Plutão. 
+Gravidade: 0,82 m/s2.
+Densidade: 2.520 kg/m3. 
+Tamanho e distância: Seu diâmetro possui 2.400 km, e está a 10 bilhões de km do sol, o que corresponde a 68 UA.  
+Curiosidade: Seu nome vem da deusa da discórdia, porque a descoberta de Éris fez com que fosse levantada a pauta na comunidade científica sobre o que realmente é um planeta, o que fez com que Plutão fosse reclassificado e perdesse o posto de planeta. 

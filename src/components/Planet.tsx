@@ -3,10 +3,10 @@ import type { PlanetData } from '../constants';
 import { cn } from '../lib/utils';
 
 const bodyTypeLabels: Record<string, string> = {
-    star: 'Star',
-    planet: 'Planet',
-    moon: 'Moon',
-    dwarf: 'Dwarf planet',
+    star: 'Estrela',
+    planet: 'Planeta',
+    moon: 'Lua',
+    dwarf: 'Planeta anão',
 };
 
 interface PlanetProps {
@@ -111,8 +111,8 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
                         onClick={() => onReadMore(data)}
                         className="group relative inline-flex items-center gap-2 text-white uppercase text-[12px] tracking-[2px] cursor-pointer pointer-events-auto"
                     >
-                        Read Mor
-                        <span className="group-hover:pl-1 transition-all">e</span>
+                        Read Mais
+                        <span className="group-hover:pl-1 transition-all">a</span>
                         <div className="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#f39041] transition-all duration-300 group-hover:w-full" />
                     </button>
                 </div>
