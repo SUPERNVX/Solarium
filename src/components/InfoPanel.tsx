@@ -45,7 +45,7 @@ const InfoPanel: FC<InfoPanelProps> = ({ planet, onClose }) => {
             {/* Info Panel */}
             <div
                 className={cn(
-                    "fixed top-0 right-0 bottom-0 z-[70] w-[50%] max-w-[640px] transition-all duration-700 ease-[cubic-bezier(0.33,0,0,1)] overflow-y-auto",
+                    "fixed top-0 right-0 bottom-0 z-[70] w-full md:w-[50%] max-w-[640px] transition-all duration-700 ease-[cubic-bezier(0.33,0,0,1)] overflow-y-auto bg-[#050505] border-l border-white/10 shadow-2xl",
                     planet ? "translate-x-0" : "translate-x-full"
                 )}
             >

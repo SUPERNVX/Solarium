@@ -1,0 +1,45 @@
+
+> solarium@0.0.0 lint
+> eslint .
+
+
+C:\Users\super\Projetos\Solarium\src\components\3d\CelestialBody.tsx
+   15:5   error  Error: This value cannot be modified
+
+Modifying a value returned from a hook is not allowed. Consider moving the modification into the hook where the value is constructed.
+
+C:\Users\super\Projetos\Solarium\src\components\3d\CelestialBody.tsx:15:5
+  13 |     
+  14 |     const texture = useTexture(planetData.textureUrl);
+> 15 |     texture.colorSpace = THREE.SRGBColorSpace;
+     |     ^^^^^^^ value cannot be modified
+  16 |
+  17 |
+  18 |     const { speedMode, sizeMode, activePlanet, setActivePlanet } = useStore();                                                                                                                                            react-hooks/immutability
+   21:31  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\super\Projetos\Solarium\src\components\3d\CelestialBody.tsx:21:31
+  19 |
+  20 |     // Base orbit rotation angle
+> 21 |     const orbitAngle = useRef(Math.random() * Math.PI * 2);
+     |                               ^^^^^^^^^^^^^ Cannot call impure function
+  22 |
+  23 |     const phys = PHYSICS_DATA[planetData.id];
+  24 |  react-hooks/purity
+  132:5   error  Error: This value cannot be modified
+
+Modifying a value returned from a hook is not allowed. Consider moving the modification into the hook where the value is constructed.
+
+C:\Users\super\Projetos\Solarium\src\components\3d\CelestialBody.tsx:132:5
+  130 |     const moonPhys = PHYSICS_DATA[moonData.id];
+  131 |     const texture = useTexture(moonData.textureUrl);
+> 132 |     texture.colorSpace = THREE.SRGBColorSpace;
+      |     ^^^^^^^ value cannot be modified
+  133 |     
+  134 |     useFrame((state, delta) => {
+  135 |         if (!moonRef.current) return;                                                                                              react-hooks/immutability
+
+Ô£û 3 problems (3 errors, 0 warnings)
+
