@@ -8,7 +8,16 @@ interface InfoPanelProps {
     onClose: () => void;
 }
 
+const bodyTypeLabels: Record<string, string> = {
+    star: 'Star',
+    planet: 'Planet',
+    moon: 'Moon',
+    dwarf: 'Dwarf planet',
+};
+
 const InfoPanel: FC<InfoPanelProps> = ({ planet, onClose }) => {
+    const bodyLabel = planet ? bodyTypeLabels[planet.bodyType] || 'Planet' : 'Planet';
+
     return (
         <>
             {/* Backdrop */}
@@ -40,7 +49,7 @@ const InfoPanel: FC<InfoPanelProps> = ({ planet, onClose }) => {
                         {/* Planet Name */}
                         <div className="opacity-0 animate-[fadeIn_0.5s_0.2s_forwards]">
                             <h2 className="text-[12px] uppercase font-thin tracking-[6px] text-[#f39041] mb-2">
-                                Planet
+                                {bodyLabel}
                             </h2>
                             <h1 className="text-5xl lg:text-6xl font-bold uppercase tracking-[6px] leading-tight mb-8">
                                 {planet.name}

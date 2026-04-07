@@ -1,7 +1,13 @@
-import { Fragment } from 'react';
 import type { FC } from 'react';
 import type { PlanetData } from '../constants';
 import { cn } from '../lib/utils';
+
+const bodyTypeLabels: Record<string, string> = {
+    star: 'Star',
+    planet: 'Planet',
+    moon: 'Moon',
+    dwarf: 'Dwarf planet',
+};
 
 interface PlanetProps {
     data: PlanetData;
@@ -20,6 +26,11 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
     // Opacity decreases for distant planets
     const opacity = 1 - Math.abs(index - selectedIndex) * 0.5;
 
+    // Use faster transition when info panel is open
+    const transitionDuration = isInfoOpen ? '1000ms' : '2800ms';
+
+    const bodyLabel = bodyTypeLabels[data.bodyType] || 'Planet';
+
     return (
         <div
             className="absolute inset-0 flex items-center justify-center preserve-3d pointer-events-none"
@@ -28,7 +39,7 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
             {/* The Planet Sphere */}
             <div
                 className={cn(
-                    "absolute bottom-[-920px] w-[1200px] h-[1200px] rounded-full transition-all duration-[2800ms] ease-[cubic-bezier(0.33,0,0,1)] preserve-3d",
+                    "absolute bottom-[-920px] w-[1200px] h-[1200px] rounded-full preserve-3d",
                     isSelected ? "animate-[planet-rotation_60s_linear_infinite]" : ""
                 )}
                 style={{
@@ -37,10 +48,12 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
                     transform: `translateZ(${zTranslation}px) translateY(${isInfoOpen && isSelected ? '-600px' : '0px'}) rotateX(4deg) scale(${isInfoOpen && isSelected ? '0.75' : '0.89'}) translateX(${isInfoOpen && isSelected ? '-35vw' : '0px'})`,
                     opacity: Math.max(0, opacity + 1),
                     pointerEvents: isSelected ? 'all' : 'none',
-                    boxShadow: `0 -590px 150px black inset, 0 0px 130px 40px ${data.glowColor} inset, 0 0px 23px 4px ${data.glowColor} inset, 0 -10px 130px ${data.shadowColor}`
+                    boxShadow: `0 -590px 150px black inset, 0 0px 130px 40px ${data.glowColor} inset, 0 0px 23px 4px ${data.glowColor} inset, 0 -10px 130px ${data.shadowColor}`,
+                    transition: `transform ${transitionDuration} cubic-bezier(0.33,0,0,1)`,
+                    willChange: 'transform'
                 }}
             >
-                {/* Planet name label - matching original moon label style */}
+                {/* Body name label - matching original moon label style */}
                 <div
                     className="absolute text-center text-white uppercase"
                     style={{
@@ -62,7 +75,7 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
                             top: '-120px'
                         }}
                     >
-                        Planet
+                        {bodyLabel}
                     </h3>
                     <h2
                         style={{
@@ -77,32 +90,6 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
                         {data.name}
                     </h2>
                 </div>
-
-                {/* Moons and Trajectories */}
-                {data.moons.map((moon, mIdx) => (
-                    <Fragment key={moon.name}>
-                        <div
-                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-dashed border-white/20 rounded-full -z-10"
-                            style={{
-                                width: `${400 + mIdx * 200}px`,
-                                height: `${400 + mIdx * 200}px`
-                            }}
-                        />
-                        <div
-                            className="absolute top-1/2 left-1/2 w-0 h-0 animate-[moon-orbit_10s_linear_infinite]"
-                            style={{ animationDuration: `${8 + mIdx * 4}s` }}
-                        >
-                            <div
-                                className="absolute w-[30px] h-[30px] rounded-full bg-gray-400 rotate-X-[-4deg] scale-X-[1.12] -translate-x-1/2 -translate-y-1/2"
-                                style={{
-                                    left: `${200 + mIdx * 100}px`,
-                                    boxShadow: '0 -5px 10px rgba(0,0,0,0.5) inset'
-                                }}
-                            />
-                        </div>
-                    </Fragment>
-                ))}
-
             </div>
 
             {/* Description Content - fades out when info panel is open */}
@@ -113,7 +100,7 @@ const Planet: FC<PlanetProps> = ({ data, index, selectedIndex, isInfoOpen, onRea
                 )}
             >
                 <h2 className="text-[14px] uppercase font-thin tracking-[4px] text-[#f39041] mb-2 translate-y-4 transition-all duration-500 delay-[1.7s]">
-                    {isSelected && !isInfoOpen ? 'Planet' : ''}
+                    {isSelected && !isInfoOpen ? bodyLabel : ''}
                 </h2>
                 <h1 className="text-[60px] font-bold uppercase tracking-[5px] leading-tight mb-4 translate-y-4 transition-all duration-500 delay-[1.8s]">
                     {data.name}

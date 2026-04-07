@@ -84,4 +84,6 @@ Flat config format extending:
 - No Prettier, EditorConfig, or cursor/copilot rules exist
 - No test framework — if adding tests, Vitest is the natural fit for Vite projects
 - `animejs` is installed but not currently used in components
-- Planet textures are served from `/public/` as `.webp` files
+- Planet/moon/star textures are served from `/public/` as `.jpg` files
+- `PlanetData` includes a `bodyType` field: `'star' | 'planet' | 'moon' | 'dwarf'`
+- Bodies are ordered: Sun, Mercury, Venus, Earth, Moon, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, Ceres, Haumea, Makemake, Eris
