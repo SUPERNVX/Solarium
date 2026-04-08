@@ -12,7 +12,7 @@ export default function OrbitView() {
 
     return (
         <div className="absolute inset-0 w-full h-full bg-black">
-            <Canvas camera={{ position: [0, 80, 0], fov: 45 }}>
+            <Canvas camera={{ position: [0, 80, 0], fov: 45, far: 10000, near: 0.1 }}>
                 <color attach="background" args={['#050505']} />
                 
                 {/* Basic Lighting */}
