@@ -66,7 +66,7 @@ export default function CameraController() {
             ref={controlsRef} 
             enableDamping 
             dampingFactor={0.05} 
-            maxDistance={800} 
+            maxDistance={sizeMode === 'real' ? 1600 : 800} 
             minDistance={2}
         />
     );

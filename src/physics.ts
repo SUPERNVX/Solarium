@@ -64,6 +64,6 @@ export function getScaledDistance(id: string, mode: 'real' | 'presentation'): nu
     }
     
     // 'real' mode: Linear scale
-    // Inner planets will be packed tightly, outer planets will be very far
-    return 10 + (baseDistance * 10);
+    // 1 AU = 50 units, Sun offset 40
+    return 40 + (baseDistance * 50);
 }
