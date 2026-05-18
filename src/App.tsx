@@ -5,6 +5,7 @@ import Planet from './components/Planet';
 import InfoPanel from './components/InfoPanel';
 import TopNav from './components/TopNav';
 import OrbitView from './components/3d/OrbitView';
+import CelestialView from './components/3d/celestial/CelestialView';
 import { useStore } from './store';
 
 function App() {
@@ -52,8 +53,10 @@ function App() {
             onSelect={handlePlanetSelect}
           />
         </>
-      ) : (
+      ) : currentView === 'orbit' ? (
         <OrbitView />
+      ) : (
+        <CelestialView />
       )}
 
       {/* Detailed Info Panel */}
